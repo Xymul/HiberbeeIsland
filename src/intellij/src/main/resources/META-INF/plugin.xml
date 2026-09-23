@@ -17,7 +17,7 @@
   <idea-version since-build="253"/>
   <depends>com.intellij.modules.platform</depends>
   <extensions defaultExtensionNs="com.intellij">
-    <themeProvider id="HiberbeeDark" path="/themes/HiberbeeDark.theme.json" />
-    <bundledColorScheme id="Hiberbee Dark" path="/colors/Dark.xml"/>
+    <themeProvider id="HiberbeeDarkIsland" path="/themes/HiberbeeDark.theme.json" />
+    <bundledColorScheme id="Hiberbee Dark Island" path="/colors/Dark.xml"/>
   </extensions>
 </idea-plugin>
