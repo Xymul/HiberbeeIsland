@@ -1,30 +1,17 @@
-# Hiberbee Themes
+# Hiberbee Theme Island
 
-## IDE
+An unofficial continuation of the **Hiberbee** theme for JetBrains IDEs. The original plugin has not been
+updated since 2024 (it targets IntelliJ 2024.1 and the legacy UI), so this plugin keeps the theme working on
+current IDEs.
 
-### JetBrains Family
+**Original plugin:** [JetBrains Marketplace - Hiberbee Theme](https://plugins.jetbrains.com/plugin/12118-hiberbee-theme)
+(source: [github.com/hiberbee/jetbrains-ide-theme](https://github.com/hiberbee/jetbrains-ide-theme))
 
-[![Jetbrains Downloads](https://img.shields.io/jetbrains/plugin/d/12118-hiberbee-theme.svg?style=flat-square)](https://plugins.jetbrains.com/plugin/12118-hiberbee-theme) [![Jetbrains Plugin](https://img.shields.io/jetbrains/plugin/v/12118-hiberbee-theme.svg?style=flat-square)](https://plugins.jetbrains.com/plugin/12118-hiberbee-theme)
+> Note: This plugin only made changes to the Intellij module; the other modules haven't been changed.
 
-#### Editor
+**Features:** built for the Islands theme, the default look of IntelliJ-based IDEs since 2025.3 - rounded island
+areas, borderless sidebars and reworked selected tab colors. The original warm-gray palette with amber accents is
+preserved, and only IntelliJ-based IDE 2025.3 (build 253) or newer is supported.
 
-![IDE](https://github.com/hiberbee/jetbrains-ide-theme/raw/latest/screenshots/ide.png)
-
-#### Color Scheme
-
-![Code](https://github.com/hiberbee/jetbrains-ide-theme/raw/latest/screenshots/code.png)
-
-### Insomnia
-
-![Screenshot 1](https://github.com/hiberbee/insomnia-theme/raw/main/screenshots/screenshot-1.png)
-
-## Terminals
-
-### Windows Terminal
-
-See [official documentation](https://learn.microsoft.com/en-us/windows/terminal/custom-terminal-gallery/custom-schemes) and checkout the content of [settings.json](https://github.com/hiberbee/jetbrains-ide-theme/raw/latest/src/windows-terminal/settings.json)
-
-
-## Resources
-
-- [Figma](https://www.figma.com/file/2oyhOnKUdLZCDQEkH2klNT/Hiberbee-Theme)
+**Install:** `Settings > Plugins > Install Plugin from Disk` and pick the plugin zip (or install from JetBrains
+Marketplace once published). The theme shows up in the Theme list as **Hiberbee Dark Island**.
