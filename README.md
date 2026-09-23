@@ -15,3 +15,7 @@ preserved, and only IntelliJ-based IDE 2025.3 (build 253) or newer is supported.
 
 **Install:** `Settings > Plugins > Install Plugin from Disk` and pick the plugin zip (or install from JetBrains
 Marketplace once published). The theme shows up in the Theme list as **Hiberbee Dark Island**.
+
+**Effect after update:**
+
+![ide](screenshots/IDE-new.png)
