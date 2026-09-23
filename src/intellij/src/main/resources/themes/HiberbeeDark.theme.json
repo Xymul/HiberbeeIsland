@@ -2,7 +2,7 @@
   "name": "Hiberbee Dark",
   "author": "Vlad Volkov",
   "dark": true,
-  "parentTheme": "Darcula",
+  "parentTheme": "Islands Dark",
   "editorScheme": "Hiberbee Dark",
   "colors": {
     "dark1": "#070605",
@@ -76,6 +76,48 @@
       "successBackground": "greenBg",
       "infoBackground": "blueBg",
       "shortcutForeground": "light10"
+    },
+    "Islands": 1,
+    "Island": {
+      "borderColor": "dark7"
+    },
+    "MainWindow.background": "dark9",
+    "MainToolbar": {
+      "background": "dark9",
+      "inactiveBackground": "dark9",
+      "borderColor": "#00000000",
+      "separatorColor": "dark10",
+      "Icon": {
+        "background": "dark9",
+        "pressedBackground": "dark8"
+      },
+      "Dropdown": {
+        "pressedBackground": "dark8",
+        "transparentHoverBackground": "dark8"
+      }
+    },
+    "ToolWindow.Stripe": {
+      "background": "dark9",
+      "borderColor": "#00000000",
+      "separatorColor": "dark10"
+    },
+    "StatusBar": {
+      "background": "dark9",
+      "borderColor": "#00000000",
+      "Widget": {
+        "foreground": "light6",
+        "hoverForeground": "light9",
+        "hoverBackground": "dark8",
+        "pressedBackground": "dark8"
+      },
+      "Breadcrumbs": {
+        "foreground": "light6",
+        "hoverForeground": "light9",
+        "hoverBackground": "dark8",
+        "pressedBackground": "dark8",
+        "selectionBackground": "dark8",
+        "selectionInactiveBackground": "dark8"
+      }
     },
     "ActionButton": {
       "hoverBorderColor": "dark10",
@@ -155,7 +197,6 @@
       "iconColor": "accent",
       "focusColor": "dark10",
       "focusWidth": 2,
-      "arc": 0,
       "focusedBorderColor": "dark10",
       "inactiveErrorFocusColor": "#ff545480",
       "inactiveWarningFocusColor": "#ffb90080",
@@ -176,11 +217,7 @@
       },
       "EvaluateExpression.background": "dark8"
     },
-    "DebuggerTabs": {
-      "underlineHeight": 1
-    },
     "DefaultTabs": {
-      "underlineHeight": 1,
       "background": "dark7",
       "inactiveUnderlineColor": "#ffb90080",
       "underlineColor": "accent",
@@ -207,9 +244,14 @@
       "background": "dark7"
     },
     "EditorTabs": {
-      "inactiveUnderlineColor": "dark10",
-      "borderColor": "dark10",
-      "background": "dark6"
+      "background": "dark4",
+      "hoverBackground": "dark5",
+      "hoverInactiveBackground": "dark5",
+      "underTabsBorderColor": "dark8",
+      "underlinedBorderColor": "accent",
+      "underlinedTabBackground": "dark6",
+      "inactiveUnderlinedTabBorderColor": "dark10",
+      "inactiveUnderlinedTabBackground": "dark5"
     },
     "FileColor": {
       "Gray": "dark8",
@@ -231,7 +273,6 @@
       "selectionForeground": "yellow"
     },
     "FormattedTextField.selectionBackground": "dark4",
-    "GotItTooltip.arc": 4,
     "GutterTooltip": {
       "lineSeparatorColor": "dark9",
       "infoForeground": "light3"
@@ -281,7 +322,6 @@
       "usedBackground": "redBg"
     },
     "Menu": {
-      "Selection.arc": 0,
       "Selection.outerInsets": "1,0,1,0",
       "Selection.innerInsets": "4,4,4,4",
       "background": "dark6",
@@ -385,7 +425,6 @@
       },
       "separatorInsets": "2,0,2,0",
       "Selection": {
-        "arc": 0,
         "innerInsets": "4,8,4,8",
         "leftRightInset": 1
       },
@@ -394,7 +433,6 @@
     },
     "PopupMenu": {
       "borderWidth": 0,
-      "Selection.arc": 0,
       "Selection.innerInsets": "4,8,4,8",
       "Selection.outerInsets": "2,0,2,0",
       "background": "dark6",
@@ -572,6 +610,7 @@
       },
       "Header": {
         "padding": "0,1,0,1",
+        "borderColor": "dark8",
         "background": "dark4",
         "inactiveBackground": "dark5"
       },
@@ -594,7 +633,6 @@
       "hoverInactiveBackground": "dark5",
       "modifiedItemForeground": "blue",
       "selectionBackground": "dark5",
-      "Selection.arc": 0,
       "selectionInactiveBackground": "dark6"
     },
     "ValidationTooltip": {
