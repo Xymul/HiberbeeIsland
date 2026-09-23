@@ -36,8 +36,8 @@ intellijPlatform {
     version = project.version.toString()
 
     changeNotes = """
+- Adapted to the Islands theme of IntelliJ 2025.3
 - Migrated to the IntelliJ Platform Gradle Plugin 2.x
-- Build against IntelliJ IDEA 2025.3
 """
 
     ideaVersion {
