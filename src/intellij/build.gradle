@@ -2,8 +2,8 @@ import java.time.OffsetDateTime
 
 plugins {
   id("java")
-  id("org.jetbrains.intellij") version "1.16.0"
-  id("com.github.ben-manes.versions") version "0.49.0"
+  id("org.jetbrains.intellij.platform") version "2.19.0"
+  id("io.github.ben-manes.versions") version "0.64.0"
 }
 
 group = "com.hiberbee"
@@ -11,35 +11,50 @@ version = System.getenv("APP_VERSION") ?: OffsetDateTime.now().format("YYYY.M.d.
 
 repositories {
   mavenCentral()
+  intellijPlatform {
+    defaultRepositories()
+  }
 }
 
-intellij {
-  pluginName ="Hiberbee Theme"
-  type = "IU"
-  version = "LATEST-EAP-SNAPSHOT"
-  updateSinceUntilBuild = false
+dependencies {
+  intellijPlatform {
+    // IntelliJ IDEA 2025.3 and newer is shipped as a unified distribution
+    intellijIdea("2025.3")
+  }
 }
 
 java {
-  sourceCompatibility = JavaVersion.VERSION_17
-  targetCompatibility = JavaVersion.VERSION_17
+  // IntelliJ Platform 2025.3 and newer requires Java 21
+  sourceCompatibility = JavaVersion.VERSION_21
+  targetCompatibility = JavaVersion.VERSION_21
 }
 
-buildSearchableOptions {
-  enabled = false
-}
+intellijPlatform {
+  buildSearchableOptions = false
 
-publishPlugin {
-  setToken(System.getenv("JETBRAINS_TOKEN"))
-}
+  pluginConfiguration {
+    version = project.version.toString()
 
-runIdePerformanceTest {
- testDataDir = rootProject.files("src/test/java").getAsPath()
-}
-
-patchPluginXml {
-  changeNotes = """
-- Fixed mess up around color scheme provided (#108)
+    changeNotes = """
+- Migrated to the IntelliJ Platform Gradle Plugin 2.x
+- Build against IntelliJ IDEA 2025.3
 """
-  version = project.version
+
+    ideaVersion {
+      sinceBuild = "253"
+      untilBuild = provider { null }
+    }
+  }
+
+  publishing {
+    token = providers.environmentVariable("JETBRAINS_TOKEN")
+      .orElse(providers.environmentVariable("PUBLISH_TOKEN"))
+  }
+}
+
+tasks {
+  wrapper {
+    gradleVersion = "9.3.0"
+    distributionType = Wrapper.DistributionType.BIN
+  }
 }
